@@ -1,0 +1,28 @@
+.frame {
+    height: 50vh;
+    width: 80vw;
+
+    border: 10px solid black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+
+}
+
+.dot {
+    height: 1em;
+    width: 1em;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 50%;
+    float: left;
+    background-color: blueviolet;
+}
+
+.dots {
+    position: relative;
+    display: flex;
+    
+}
