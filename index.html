@@ -1,43 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel slideshow</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Carousel slideshow</title>
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- carousel -->
+        <section class="carousel__container">
+            <!-- individual slides containers-->
+            <ul class="carousel__viewport">
+                <!-- individual slides with shifter buttons for each -->
+                <li class="carousel__slide" tabindex="0" id="carousel__slide1">
+                    <div class="carousel__shifter">
+                        <a href="#carousel__slide4" class="carousel__prev"
+                            >Previous</a
+                        >
+                        <a href="#carousel__slide2" class="carousel__next"
+                            >Next</a
+                        >
+                    </div>
+                </li>
+                <li class="carousel__slide" tabindex="0" id="carousel__slide2">
+                    <div class="carousel__shifter">
+                        <a href="#carousel__slide1" class="carousel__prev"
+                            >Previous</a
+                        >
+                        <a href="#carousel__slide3" class="carousel__next"
+                            >Next</a
+                        >
+                    </div>
+                </li>
+                <li class="carousel__slide" tabindex="0" id="carousel__slide3">
+                    <div class="carousel__shifter">
+                        <a href="#carousel__slide2" class="carousel__prev"
+                            >Previous</a
+                        >
+                        <a href="#carousel__slide4" class="carousel__next"
+                            >Next</a
+                        >
+                    </div>
+                </li>
+                <li class="carousel__slide" tabindex="0" id="carousel__slide4">
+                    <div class="carousel__shifter">
+                        <a href="#carousel__slide3" class="carousel__prev"
+                            >Previous</a
+                        >
+                        <a href="#carousel__slide1" class="carousel__next"
+                            >Next</a
+                        >
+                    </div>
+                </li>
+            </ul>
 
-</head>
-<body>
-
-    <div class="frame">
-
-        <button id="previous"></button>
-
-        <div class="individual one">
-
-        </div>
-        <div class="individual two">
-
-        </div>
-        <div class="individual three">
-
-        </div>
-        <div class="individual four">
-
-        </div>
-
-        <div class="dots">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-
-
-        <button id="next"></button>
-    </div>
-
-    
-</body>
+            <!-- navigation -->
+            <aside class="carousel__navigation">
+                <ul class="carousel__navigation-list">
+                    <li class="carousel__navigation-dot">
+                        <a href="#carousel__slide1" class="carousel__navigation-button"></a>
+                    </li>
+                    <li class="carousel__navigation-dot">
+                        <a href="#carousel__slide2" class="carousel__navigation-button"></a>
+                    </li>
+                    <li class="carousel__navigation-dot">
+                        <a href="#carousel__slide3" class="carousel__navigation-button"></a>
+                    </li>
+                    <li class="carousel__navigation-dot">
+                        <a href="#carousel__slide4" class="carousel__navigation-button"></a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    </body>
 </html>
